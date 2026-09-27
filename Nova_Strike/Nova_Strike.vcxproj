@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{94B4448E-02A8-4EC5-830F-3CA8C3460A24}</ProjectGuid>
+    <RootNamespace>Nova_Strike</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="iMain.cpp" />
+    <ClCompile Include="stb_image.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Enemy properties.h" />
+    <ClInclude Include="GameFlow.hpp" />
+    <ClInclude Include="glaux.h" />
+    <ClInclude Include="glut.h" />
+    <ClInclude Include="Header\AK47.hpp" />
+    <ClInclude Include="Header\Bullet.hpp" />
+    <ClInclude Include="Header\enemy_animation.h" />
+    <ClInclude Include="Header\enemy_properties.h" />
+    <ClInclude Include="Header\FlameThrower.hpp" />
+    <ClInclude Include="Header\Grenade.hpp" />
+    <ClInclude Include="Header\Health.hpp" />
+    <ClInclude Include="Header\PlasmaRifle.hpp" />
+    <ClInclude Include="Header\thanos.hpp" />
+    <ClInclude Include="iGraphics.h" />
+    <ClInclude Include="level.hpp" />
+    <ClInclude Include="Level2.hpp" />
+    <ClInclude Include="Level3.hpp" />
+    <ClInclude Include="Leveltransition.hpp" />
+    <ClInclude Include="Playercontroller.hpp" />
+    <ClInclude Include="Puzzle1.hpp" />
+    <ClInclude Include="Puzzle2.hpp" />
+    <ClInclude Include="Puzzle3.hpp" />
+    <ClInclude Include="Puzzle4.hpp" />
+    <ClInclude Include="Puzzlecommon.hpp" />
+    <ClInclude Include="SideQuest.hpp" />
+    <ClInclude Include="SoundManager.hpp" />
+    <ClInclude Include="SpaceStone.hpp" />
+    <ClInclude Include="UIComponents.hpp" />
+    <ClInclude Include="Variables.h" />
+    <ClInclude Include="Header\Hero.hpp" />
+    <ClInclude Include="Header\Utility.hpp" />
+    <ClInclude Include="Header\enemy.h" />
+    <ClInclude Include="Header\Knife.hpp" />
+    <ClInclude Include="Header\Pistol.hpp" />
+    <ClInclude Include="Header\WeaponControl.hpp" />
+    <ClInclude Include="Header\WeaponHUD.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

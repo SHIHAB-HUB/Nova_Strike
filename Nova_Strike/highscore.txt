@@ -1,0 +1,9 @@
+# NovaStrike: Ascension - persistent save data
+# Format: <FIELD_NAME> <INTEGER VALUE>, one record per line.
+NOVASTRIKE_SAVE 1
+HIGHSCORE 1585
+TOTAL_RUNS 25
+LAST_SCORE 1585
+# Run times, in whole seconds. BEST_TIME 0 = no clear recorded yet.
+LAST_TIME 126
+BEST_TIME 0

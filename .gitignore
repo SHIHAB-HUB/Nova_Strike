@@ -1,0 +1,9 @@
+Debug/
+*.sdf
+*.suo
+*.obj
+*.pdb
+*.ilk
+*.DS_Store
+*.log
+*.tlog
